@@ -27,6 +27,23 @@ public class BinaryTreeComplete {
         preOrderRe(root.right,sb);
     }
 
+    public String inOrder(Node root){
+        if(root == null){
+            return  "";
+        }
+        StringBuilder sb = new StringBuilder();
+        inOrder(root,sb);
+        return sb.toString();
+    }
+    public void inOrder(Node root,StringBuilder sb){
+        if(root == null){
+            return;
+        }
+        inOrder(root.left,sb);
+        sb.append(root.val).append(",");
+        inOrder(root.right,sb);
+    }
+
 
     public String preOrderNonRecursion(Node root) {
             StringBuilder sb = new StringBuilder();
