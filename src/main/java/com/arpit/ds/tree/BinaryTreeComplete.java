@@ -52,12 +52,25 @@ public class BinaryTreeComplete {
         inOrderRecursion(root.right, sb);
     }
 
-    public void inOrderNonRecursion(Node root, StringBuilder sb){
-        if(root == null){
-            return;
+    public String inOrderNonRecursion(Node root){
+        if(root == null) {
+            return "";
         }
-        Stack s = new Stack();
-
+        StringBuilder sb = new StringBuilder();
+        Stack<Node> s = new Stack();
+        while(true){
+            while(root != null){
+                s.push(root);
+                root = root.left;
+            }
+            if(s.isEmpty()){
+                break;
+            }
+            root = s.pop();
+            sb.append(root.val).append(",");
+            root = root.right;
+        }
+        return sb.toString();
 
     }
 
