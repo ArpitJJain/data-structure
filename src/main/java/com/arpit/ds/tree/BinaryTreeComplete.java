@@ -2,21 +2,6 @@ package com.arpit.ds.tree;
 
 import java.util.Stack;
 
-class Node {
-    int val;
-    Node left;
-    Node right;
-
-    Node(int val) {
-        this.val = val;
-    }
-
-    @Override
-    public String toString() {
-        return ""+val;
-    }
-}
-
 public class BinaryTreeComplete {
 
     public String preOrderRecursion(Node root) {
