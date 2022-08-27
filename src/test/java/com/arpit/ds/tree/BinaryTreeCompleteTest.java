@@ -51,7 +51,7 @@ class BinaryTreeCompleteTest {
     public void test_inOrder(){
         BinaryTreeComplete test = new BinaryTreeComplete();
         Node root = getFullBinaryTree();
-        String result = test.inOrder(root);
+        String result = test.inOrderRecursion(root);
         assertEquals("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,",result);
     }
 
@@ -109,4 +109,13 @@ class BinaryTreeCompleteTest {
         return n;
     }
 
+    @Test
+    void test_height() {
+        Node n = new Node(2);
+        n.right = new Node(3);
+        n.left = new Node(1);
+        BinaryTreeComplete binaryTree = new BinaryTreeComplete();
+        assertEquals(2,binaryTree.height(n));
+        assertEquals(5,binaryTree.height(getFullBinaryTree()));
+    }
 }
