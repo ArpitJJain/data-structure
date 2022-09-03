@@ -83,6 +83,7 @@ class BinaryTreeCompleteTest {
          *
          *
          * */
+
         Node n = new Node(16);
         n.left = new Node(8);
         n.left.left = new Node(4);
@@ -125,5 +126,54 @@ class BinaryTreeCompleteTest {
         BinaryTreeComplete binaryTree = new BinaryTreeComplete();
         assertEquals(2,binaryTree.height(n));
         assertEquals(5,binaryTree.height(getFullBinaryTree()));
+    }
+
+    @Test
+    void preOrderRecursion() {
+    }
+
+    @Test
+    void preOrderRe() {
+    }
+
+    @Test
+    void inOrderRecursion() {
+    }
+
+    @Test
+    void testInOrderRecursion() {
+    }
+
+    @Test
+    void inOrderNonRecursion() {
+    }
+
+    @Test
+    void height() {
+    }
+
+    @Test
+    void testHeight() {
+    }
+
+    @Test
+    void preOrderNonRecursion() {
+    }
+
+    @Test
+    void preOrder1() {
+    }
+
+    @Test
+    void preOrder() {
+    }
+
+    @Test
+    void levelOrderNonReq() {
+        String result = "16,8,24,4,12,20,28,2,6,10,14,18,22,26,30,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,";
+        BinaryTreeComplete bt = new BinaryTreeComplete();
+        StringBuilder sb = new StringBuilder();
+        bt.levelOrderNonReq(getFullBinaryTree(),sb);
+        assertEquals(result,sb.toString());
     }
 }
