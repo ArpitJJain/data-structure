@@ -137,4 +137,13 @@ public class BinaryTreeComplete {
             }
         }
     }
+    public int max(Node root){
+        if(root == null){
+            return Integer.MIN_VALUE;
+        }
+        int leftMax = max(root.left);
+        int rightMax = max(root.right);
+        return Math.max(root.val,Math.max(leftMax, rightMax));
+    }
+
 }

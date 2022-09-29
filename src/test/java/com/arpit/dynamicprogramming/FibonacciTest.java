@@ -9,6 +9,6 @@ class FibonacciTest {
     @Test
     void nthFibonacci() {
         Fibonacci fibonacci = new Fibonacci();
-        assertEquals(1,fibonacci.nthFibonacci(637));
+        assertEquals(13,fibonacci.nthFibonacci(7));
     }
 }

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BinaryTreeCompleteTest {
 
     @Test
-    public void test_preOrderRecursion(){
+    public void preOrderRecursion(){
         BinaryTreeComplete test = new BinaryTreeComplete();
         /*
         * Input Tree Type
@@ -48,7 +48,7 @@ class BinaryTreeCompleteTest {
     }
 
     @Test
-    public void test_inOrder(){
+    public void inOrderRecursion(){
         BinaryTreeComplete test = new BinaryTreeComplete();
         Node root = getFullBinaryTree();
         String result = test.inOrderRecursion(root);
@@ -56,7 +56,7 @@ class BinaryTreeCompleteTest {
     }
 
     @Test
-    public void test_inOrderNonRecurtion(){
+    public void inOrderNonRecursion(){
         BinaryTreeComplete test = new BinaryTreeComplete();
         Node root = getFullBinaryTree();
         String result = test.inOrderNonRecursion(root);
@@ -119,7 +119,7 @@ class BinaryTreeCompleteTest {
     }
 
     @Test
-    void test_height() {
+    void height() {
         Node n = new Node(2);
         n.right = new Node(3);
         n.left = new Node(1);
@@ -128,16 +128,9 @@ class BinaryTreeCompleteTest {
         assertEquals(5,binaryTree.height(getFullBinaryTree()));
     }
 
-    @Test
-    void preOrderRecursion() {
-    }
 
     @Test
     void preOrderRe() {
-    }
-
-    @Test
-    void inOrderRecursion() {
     }
 
     @Test
@@ -145,19 +138,13 @@ class BinaryTreeCompleteTest {
     }
 
     @Test
-    void inOrderNonRecursion() {
-    }
-
-    @Test
-    void height() {
-    }
-
-    @Test
     void testHeight() {
     }
 
     @Test
-    void preOrderNonRecursion() {
+    void max() {
+        BinaryTreeComplete bt = new BinaryTreeComplete();
+        assertEquals(31,bt.max(getFullBinaryTree()));
     }
 
     @Test
@@ -166,6 +153,7 @@ class BinaryTreeCompleteTest {
 
     @Test
     void preOrder() {
+
     }
 
     @Test
