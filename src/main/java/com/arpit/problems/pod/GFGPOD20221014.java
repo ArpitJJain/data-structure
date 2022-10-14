@@ -40,6 +40,5 @@ public class GFGPOD20221014 {
     public static void main(String[] args) {
         assertEquals(10 ,maximizeSum(new int[]{1, 2, 2, 2, 3, 4},6));
         assertEquals(4 ,maximizeSum(new int[]{1, 2, 3},3));
-
     }
 }
