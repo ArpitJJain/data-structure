@@ -7,4 +7,13 @@ public class MergeSort implements SortInterface{
 
        }
     }
+    private void mergeSort(int[] data, int left, int right){
+        int mid;
+        if(right>left){
+            mid = (left+right)/2;
+           // mergeSort(data,temp,left,mid);
+            //mergeSort(data,temp,mid+1,right);
+            //me
+        }
+    }
 }
